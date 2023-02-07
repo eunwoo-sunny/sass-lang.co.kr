@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .box {
+        width: 40vw;
+        border: 1px solid #ddd;
+      }
+
+      .box img {
+        max-width: 100%;
+        min-height: 100%;
+      }
+
+      .box .thumb {
+        height: 300px;
+        background: red;
+        /* background-image: url("./src/assets/dummy1_big.jpg");
+        background-size: cover;
+        background-color: red;
+        background-repeat: no-repeat;
+        background-position: center center; */
+      }
+    </style>
   </head>
   <body>
     <h1>Sass-lang in Korean</h1>
     <p>Wonderfull</p>
+    <div class="box">
+      <div class="thumb"><img src="./src/assets/dummy1_big.jpg" /></div>
+      <div class="contents">
+        <h2>Title</h2>
+        <p>Contents</p>
+      </div>
+    </div>
   </body>
 </html>
