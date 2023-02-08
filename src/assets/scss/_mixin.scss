@@ -1,0 +1,26 @@
+@mixin flexH($gap: null, $a: center, $j: null, $w: nowrap) {
+  display: flex;
+  align-items: $a;
+  justify-content: $j;
+  flex-wrap: $w;
+  column-gap: unitCheck($gap);
+}
+
+@mixin flexV($gap: null, $a: null, $j: null, $w: nowrap) {
+  display: flex;
+  align-items: $a;
+  justify-content: $j;
+  flex-wrap: $w;
+  row-gap: unitCheck($gap);
+}
+
+@mixin grid($count: 3, $gap: null) {
+  display: grid;
+  grid-template-columns: repeat($count, 1fr);
+  grid-gap: unitCheck($gap);
+}
+
+@mixin auto {
+  margin-left: auto;
+  margin-right: auto;
+}

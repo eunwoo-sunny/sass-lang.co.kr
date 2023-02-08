@@ -1,0 +1,53 @@
+.page-main .visual {
+  position: relative;
+  z-index: 1;
+  background: $dark url($url + 'sass.svg') no-repeat right 50px bottom 50px/300px;
+  color: #fff;
+  height: 50vh;
+  max-height: 530px;
+
+  .inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: 100;
+    }
+
+    p {
+      margin-top: 1em;
+      font-size: 24px;
+      font-weight: 200;
+    }
+  }
+}
+
+.page-main .summary {
+  color: color($text, 400);
+  @extend %baseWidth;
+  margin: 50px auto;
+  .list {
+    dt {
+      font : {
+        size: 2em;
+        family: $serif;
+      }
+      margin-bottom: 15px;
+
+      span {
+        font-size: 0.7em;
+        color: color($text, 300);
+        letter-spacing: -0.4px;
+      }
+    }
+
+    dd {
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    @include grid(3, 50);
+  }
+}

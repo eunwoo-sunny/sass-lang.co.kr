@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Scope+One&display=swap');
+
+$url: '../images/';
+$dark: #212121;
+$primary: (
+  100: #f3dae7,
+  200: #f0c1d9,
+  300: #e7aac9,
+  400: #e392ba,
+  500: #d87ba9,
+  600: #cc6699,
+  700: #c4508a,
+  800: #bb3678,
+  900: #a91760,
+);
+
+$text: (
+  100: #999999,
+  200: #898d99,
+  300: #797f8f,
+  400: #5e6576,
+  500: #3a4051,
+  600: #003366,
+  700: #151518,
+);
+
+%baseWidth {
+  width: 100%;
+  max-width: 1200px;
+}
+
+@import 'reset', 'function', 'mixin';
+
+body {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+}
+
+$serif: 'Scope One', serif;
+
+@import 'header', 'main';
