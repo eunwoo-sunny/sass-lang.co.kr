@@ -1,0 +1,4 @@
+@mixin mgSide($size:auto) { 
+  margin-left:$size;
+  margin-right:$size;
+}

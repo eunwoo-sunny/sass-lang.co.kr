@@ -1,0 +1,11 @@
+@function unitCheck($x) {
+  $notNum : type-of($x) == number;  
+  @if($notNum) {
+    @if(unitless($x) and not($x == 0)) {
+      @return $x + px;
+    } @else {
+      @return $x;
+    }  
+  }   
+}
+  

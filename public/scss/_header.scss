@@ -1,0 +1,14 @@
+// header
+
+
+
+.page-header {
+   .inner {
+    @extend %inner;
+   }
+}
+
+.page-nav {
+    color:$nav;
+    font-size:16px;
+}

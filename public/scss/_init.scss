@@ -1,0 +1,15 @@
+$img : '/images/';
+$icon : $img + '/icons/';
+
+$pc: 1024;
+$tablet: 768;
+$android: 480;
+$mobile: 375;
+$ios: 360;
+
+@import 'reset';
+
+// colors
+$primary : #CC6699;
+$nav : #003366;
+ 
